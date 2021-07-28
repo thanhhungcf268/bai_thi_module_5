@@ -17,9 +17,9 @@ export class DeleteBookComponent implements OnInit {
       const a = paramMap.get('id');
       // tslint:disable-next-line:radix
       this.id = parseInt(a);
-      // this.bookService.getBook(this.id).subscribe(book => {
-      //   this.book = book;
-      // });
+      this.bookService.getBook(this.id).subscribe(book => {
+        this.book = book;
+      });
     });
   }
 

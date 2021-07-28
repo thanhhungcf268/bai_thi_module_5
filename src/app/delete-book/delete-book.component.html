@@ -1,8 +1,22 @@
 <p>delete-book works!</p>
 <form>
   <p>Bạn có muốn xóa không</p>
-  <div>
-    <button (click)="delete()">có</button>
-    <button><a routerLink="/">không</a></button>
-  </div>
+  <table >
+    <tr>
+      <th>Tên sách:</th>
+      <td><p>{{book.title}}</p></td>
+    </tr>
+    <tr>
+      <th>Tác giả:</th>
+      <td><p>{{book.author}}</p></td>
+    </tr>
+    <tr>
+      <th>Mô tả:</th>
+      <td><p>{{book.description}}</p></td>
+    </tr>
+    <tr>
+      <td><button (click)="delete()">Xóa</button></td>
+      <td><button><a routerLink="/">Thoát</a></button></td>
+    </tr>
+  </table>
 </form>
