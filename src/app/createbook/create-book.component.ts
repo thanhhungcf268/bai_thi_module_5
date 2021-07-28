@@ -4,11 +4,11 @@ import {BookService} from '../book.service';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-createbook',
-  templateUrl: './createbook.component.html',
-  styleUrls: ['./createbook.component.css']
+  selector: 'app-create-book',
+  templateUrl: './create-book.component.html',
+  styleUrls: ['./create-book.component.css']
 })
-export class CreatebookComponent implements OnInit {
+export class CreateBookComponent implements OnInit {
   book: Book = {};
   constructor(private bookService: BookService, private router: Router) { }
 

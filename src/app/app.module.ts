@@ -7,9 +7,9 @@ import { BookComponent } from './book/book.component';
 import {HttpClientModule} from '@angular/common/http';
 import { EditBookComponent } from './edit-book/edit-book.component';
 import { DeleteBookComponent } from './delete-book/delete-book.component';
-import { CreatebookComponent } from './createbook/createbook.component';
 import {FormsModule} from '@angular/forms';
 import { ViewBookComponent } from './view-book/view-book.component';
+import {CreateBookComponent} from './createbook/create-book.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +17,8 @@ import { ViewBookComponent } from './view-book/view-book.component';
     BookComponent,
     EditBookComponent,
     DeleteBookComponent,
-    CreatebookComponent,
-    ViewBookComponent
+    ViewBookComponent,
+    CreateBookComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {BookComponent} from './book/book.component';
-import {CreatebookComponent} from './createbook/createbook.component';
+import {CreateBookComponent} from './createbook/create-book.component';
 import {EditBookComponent} from './edit-book/edit-book.component';
 import {DeleteBookComponent} from './delete-book/delete-book.component';
 import {ViewBookComponent} from './view-book/view-book.component';
@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: `create`,
-    component: CreatebookComponent
+    component: CreateBookComponent
   },
   {
     path: `edit/:id`,
