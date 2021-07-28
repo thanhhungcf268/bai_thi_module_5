@@ -1,0 +1,16 @@
+<p>book works!</p>
+<div>
+  <a routerLink="/create">Thêm sách mới</a>
+  <table>
+    <tr>
+      <th>Tên sách</th>
+      <th>Tác Giả</th>
+      <th>Tên sách</th>
+    </tr>
+    <tr *ngFor="let book of books">
+      <td><a [routerLink]="['/view/'+book.id]">{{book.title}}</a></td>
+      <td>{{book.author}}</td>
+      <td><a [routerLink]="['/edit/'+book.id]">sửa</a>/<a [routerLink]="['/delete/'+book.id]">xóa</a></td>
+    </tr>
+  </table>
+</div>
